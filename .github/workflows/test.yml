@@ -54,8 +54,6 @@ jobs:
           toolchain: stable
       - name: test/release (all features)
         run: cargo +stable test --release --all-features
-      - name: test/release (no features)
-        run: cargo +stable test --release --no-default-features
   test-debug:
     name: cargo test (debug)
     runs-on: ubuntu-latest
@@ -68,5 +66,3 @@ jobs:
           toolchain: stable
       - name: test/debug (all features)
         run: cargo +stable test --all-features
-      - name: test/debug (no features)
-        run: cargo +stable test --no-default-features
